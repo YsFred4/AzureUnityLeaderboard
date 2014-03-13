@@ -88,8 +88,8 @@ public class AzureUI : MonoBehaviour {
     public LeaderBoard _score = new LeaderBoard() { UserName="", Id=null, Score=0 };
     public List<LeaderBoard> _leaders = new List<LeaderBoard>();
 
-    public string AzureEndPoint = "https://unityleaderboard.azure-mobile.net/";
-    public string ApplicationKey = "sMkhPtZJYlndEGAWTxxKoOfadQIvmo27";
+    public string AzureEndPoint = "<your leaderboard service>";
+    public string ApplicationKey = "<your application key>";
     private AzureMobileServices azure;
 
 	// Use this for initialization
