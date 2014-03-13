@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>10.0.20506</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<ProjectGuid>{98852A89-060E-B3A6-EC64-ABD2135936F7}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<RootNamespace></RootNamespace>
+	<AssemblyName>Assembly-CSharp</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+	<BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_STANDALONE_WIN;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_AUDIO_FMOD;UNITY_STANDALONE;ENABLE_MONO;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_GENERICS;ENABLE_SUBSTANCE;INCLUDE_WP8SUPPORT;ENABLE_MOVIES;ENABLE_WWW;ENABLE_IMAGEEFFECTS;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;RENDER_SOFTWARE_CURSOR;ENABLE_NETWORK;ENABLE_PHYSICS;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_2D_PHYSICS;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_DUCK_TYPING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;UNITY_4_3_4;UNITY_4_3;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_WIN</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<DefineConstants>TRACE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="System" />
+    <Reference Include="System.XML" />
+	<Reference Include="System.Core" />
+	<Reference Include="System.Xml.Linq" />
+	<Reference Include="UnityEngine">
+	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\AzureUI.cs" />
+     <Compile Include="Assets\Scripts\AzureMobileServices.cs" />
+     <Compile Include="Assets\Scripts\AzurePlatformCommon.cs" />
+     <Compile Include="Assets\Scripts\IAzureMobileServices.cs" />
+     <Compile Include="Assets\Scripts\LeaderBoard.cs" />
+     <Compile Include="Assets\Scripts\MobileServiceRequestHelper.cs" />
+     <Compile Include="Assets\Scripts\OData\ExpressionWriter.cs" />
+     <Compile Include="Assets\Scripts\OData\IExpressionWriter.cs" />
+     <Compile Include="Assets\Scripts\OData\ODataExpressionConverter.cs" />
+     <Compile Include="Assets\Scripts\OData\Writers\AnyAllMethodWriter.cs" />
+     <Compile Include="Assets\Scripts\OData\Writers\BooleanValueWriter.cs" />
+     <Compile Include="Assets\Scripts\OData\Writers\ByteArrayValueWriter.cs" />
+     <Compile Include="Assets\Scripts\OData\Writers\ByteValueWriter.cs" />
+     <Compile Include="Assets\Scripts\OData\Writers\DateTimeOffsetValueWriter.cs" />
+     <Compile Include="Assets\Scripts\OData\Writers\DateTimeValueWriter.cs" />
+     <Compile Include="Assets\Scripts\OData\Writers\DecimalValueWriter.cs" />
+     <Compile Include="Assets\Scripts\OData\Writers\DefaultMethodWriter.cs" />
+     <Compile Include="Assets\Scripts\OData\Writers\DoubleValueWriter.cs" />
+     <Compile Include="Assets\Scripts\OData\Writers\EmptyAnyMethodWriter.cs" />
+     <Compile Include="Assets\Scripts\OData\Writers\EnumValueWriter.cs" />
+     <Compile Include="Assets\Scripts\OData\Writers\EqualsMethodWriter.cs" />
+     <Compile Include="Assets\Scripts\OData\Writers\GuidValueWriter.cs" />
+     <Compile Include="Assets\Scripts\OData\Writers\IMethodCallWriter.cs" />
+     <Compile Include="Assets\Scripts\OData\Writers\IValueWriter.cs" />
+     <Compile Include="Assets\Scripts\OData\Writers\IntValueWriter.cs" />
+     <Compile Include="Assets\Scripts\OData\Writers\IntegerValueWriter.cs" />
+     <Compile Include="Assets\Scripts\OData\Writers\LongValueWriter.cs" />
+     <Compile Include="Assets\Scripts\OData\Writers\MathCeilingMethodWriter.cs" />
+     <Compile Include="Assets\Scripts\OData\Writers\MathFloorMethodWriter.cs" />
+     <Compile Include="Assets\Scripts\OData\Writers\MathMethodWriter.cs" />
+     <Compile Include="Assets\Scripts\OData\Writers\MathRoundMethodWriter.cs" />
+     <Compile Include="Assets\Scripts\OData\Writers\ParameterValueWriter.cs" />
+     <Compile Include="Assets\Scripts\OData\Writers\RationalValueWriter.cs" />
+     <Compile Include="Assets\Scripts\OData\Writers\ShortValueWriter.cs" />
+     <Compile Include="Assets\Scripts\OData\Writers\SingleValueWriter.cs" />
+     <Compile Include="Assets\Scripts\OData\Writers\StreamValueWriter.cs" />
+     <Compile Include="Assets\Scripts\OData\Writers\StringContainsMethodWriter.cs" />
+     <Compile Include="Assets\Scripts\OData\Writers\StringEndsWithMethodWriter.cs" />
+     <Compile Include="Assets\Scripts\OData\Writers\StringIndexOfMethodWriter.cs" />
+     <Compile Include="Assets\Scripts\OData\Writers\StringReplaceMethodWriter.cs" />
+     <Compile Include="Assets\Scripts\OData\Writers\StringStartsWithMethodWriter.cs" />
+     <Compile Include="Assets\Scripts\OData\Writers\StringSubstringMethodWriter.cs" />
+     <Compile Include="Assets\Scripts\OData\Writers\StringToLowerMethodWriter.cs" />
+     <Compile Include="Assets\Scripts\OData\Writers\StringToUpperMethodWriter.cs" />
+     <Compile Include="Assets\Scripts\OData\Writers\StringTrimMethodWriter.cs" />
+     <Compile Include="Assets\Scripts\OData\Writers\StringValueWriter.cs" />
+     <Compile Include="Assets\Scripts\OData\Writers\TimeSpanValueWriter.cs" />
+     <Compile Include="Assets\Scripts\OData\Writers\UnsignedIntValueWriter.cs" />
+     <Compile Include="Assets\Scripts\OData\Writers\UnsignedLongValueWriter.cs" />
+     <Compile Include="Assets\Scripts\OData\Writers\UnsignedShortValueWriter.cs" />
+     <Compile Include="Assets\Scripts\OData\Writers\ValueWriterBase.cs" />
+     <Compile Include="Assets\Scripts\ToDoItem.cs" />
+     <None Include="Assets\README.txt" />
+ <Reference Include="Newtonsoft.Json">
+ <HintPath>Assets\Plugins\Newtonsoft.Json.dll</HintPath>
+ </Reference>
+ <Reference Include="RestSharp">
+ <HintPath>Assets\Plugins\RestSharp.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
